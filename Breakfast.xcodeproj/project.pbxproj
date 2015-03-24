@@ -16,6 +16,14 @@
 		9EFFF0291AC21D9800B61495 /* String+ToHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0271AC21D9800B61495 /* String+ToHex.swift */; };
 		9EFFF02C1AC21FE300B61495 /* Dictionary+KeyForValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF02B1AC21FE300B61495 /* Dictionary+KeyForValue.swift */; };
 		9EFFF02F1AC21FF500B61495 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */; };
+		9EFFF0371AC220F300B61495 /* CAShapeLayer+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0311AC220F300B61495 /* CAShapeLayer+SVG.swift */; };
+		9EFFF0381AC220F300B61495 /* String+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0321AC220F300B61495 /* String+SVG.swift */; };
+		9EFFF0391AC220F300B61495 /* SVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0331AC220F300B61495 /* SVGParser.swift */; };
+		9EFFF03A1AC220F300B61495 /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0341AC220F300B61495 /* SVGView.swift */; };
+		9EFFF03B1AC220F300B61495 /* UIBezierPath+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0351AC220F300B61495 /* UIBezierPath+SVG.swift */; };
+		9EFFF03C1AC220F300B61495 /* UIView+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0361AC220F300B61495 /* UIView+SVG.swift */; };
+		9EFFF03F1AC222A500B61495 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF03E1AC222A500B61495 /* Pipeline.swift */; };
+		9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0411AC222B200B61495 /* Benchmarking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +49,14 @@
 		9EFFF0271AC21D9800B61495 /* String+ToHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ToHex.swift"; sourceTree = "<group>"; };
 		9EFFF02B1AC21FE300B61495 /* Dictionary+KeyForValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyForValue.swift"; sourceTree = "<group>"; };
 		9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		9EFFF0311AC220F300B61495 /* CAShapeLayer+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+SVG.swift"; sourceTree = "<group>"; };
+		9EFFF0321AC220F300B61495 /* String+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SVG.swift"; sourceTree = "<group>"; };
+		9EFFF0331AC220F300B61495 /* SVGParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGParser.swift; sourceTree = "<group>"; };
+		9EFFF0341AC220F300B61495 /* SVGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
+		9EFFF0351AC220F300B61495 /* UIBezierPath+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+SVG.swift"; sourceTree = "<group>"; };
+		9EFFF0361AC220F300B61495 /* UIView+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SVG.swift"; sourceTree = "<group>"; };
+		9EFFF03E1AC222A500B61495 /* Pipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		9EFFF0411AC222B200B61495 /* Benchmarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benchmarking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +99,11 @@
 		9EFFF0001AC218D800B61495 /* Breakfast */ = {
 			isa = PBXGroup;
 			children = (
+				9EFFF0401AC222A900B61495 /* Benchmarking */,
 				9EFFF01A1AC218E500B61495 /* Data Structures */,
 				9EFFF02A1AC21FD600B61495 /* Dictionary Extensions */,
 				9EFFF02D1AC21FEB00B61495 /* NSObject Extensions */,
+				9EFFF03D1AC2229B00B61495 /* Operators */,
 				9EFFF0251AC21D8900B61495 /* String Extensions */,
 				9EFFF0301AC2208D00B61495 /* SwiftSVG */,
 				9EFFF0221AC21D1A00B61495 /* UIColor Extensions */,
@@ -164,8 +182,30 @@
 		9EFFF0301AC2208D00B61495 /* SwiftSVG */ = {
 			isa = PBXGroup;
 			children = (
+				9EFFF0311AC220F300B61495 /* CAShapeLayer+SVG.swift */,
+				9EFFF0321AC220F300B61495 /* String+SVG.swift */,
+				9EFFF0331AC220F300B61495 /* SVGParser.swift */,
+				9EFFF0341AC220F300B61495 /* SVGView.swift */,
+				9EFFF0351AC220F300B61495 /* UIBezierPath+SVG.swift */,
+				9EFFF0361AC220F300B61495 /* UIView+SVG.swift */,
 			);
 			name = SwiftSVG;
+			sourceTree = "<group>";
+		};
+		9EFFF03D1AC2229B00B61495 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF03E1AC222A500B61495 /* Pipeline.swift */,
+			);
+			name = Operators;
+			sourceTree = "<group>";
+		};
+		9EFFF0401AC222A900B61495 /* Benchmarking */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF0411AC222B200B61495 /* Benchmarking.swift */,
+			);
+			name = Benchmarking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,11 +316,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EFFF0281AC21D9800B61495 /* String+Subscript.swift in Sources */,
+				9EFFF03A1AC220F300B61495 /* SVGView.swift in Sources */,
 				9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */,
 				9EFFF0241AC21D2C00B61495 /* UIColor+Extensions.swift in Sources */,
+				9EFFF03B1AC220F300B61495 /* UIBezierPath+SVG.swift in Sources */,
+				9EFFF0371AC220F300B61495 /* CAShapeLayer+SVG.swift in Sources */,
 				9EFFF02F1AC21FF500B61495 /* NSObject+Extensions.swift in Sources */,
+				9EFFF0391AC220F300B61495 /* SVGParser.swift in Sources */,
+				9EFFF0381AC220F300B61495 /* String+SVG.swift in Sources */,
+				9EFFF03F1AC222A500B61495 /* Pipeline.swift in Sources */,
 				9EFFF02C1AC21FE300B61495 /* Dictionary+KeyForValue.swift in Sources */,
 				9EFFF0291AC21D9800B61495 /* String+ToHex.swift in Sources */,
+				9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */,
+				9EFFF03C1AC220F300B61495 /* UIView+SVG.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
