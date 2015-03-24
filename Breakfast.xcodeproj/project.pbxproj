@@ -10,6 +10,7 @@
 		9EFFF0041AC218D800B61495 /* Breakfast.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EFFF0031AC218D800B61495 /* Breakfast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EFFF00A1AC218D800B61495 /* Breakfast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFFEFFE1AC218D800B61495 /* Breakfast.framework */; };
 		9EFFF0111AC218D800B61495 /* BreakfastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0101AC218D800B61495 /* BreakfastTests.swift */; };
+		9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF01B1AC2190C00B61495 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9EFFF0091AC218D800B61495 /* BreakfastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakfastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFFF00F1AC218D800B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFFF0101AC218D800B61495 /* BreakfastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastTests.swift; sourceTree = "<group>"; };
+		9EFFF01B1AC2190C00B61495 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		9EFFF0001AC218D800B61495 /* Breakfast */ = {
 			isa = PBXGroup;
 			children = (
+				9EFFF01A1AC218E500B61495 /* Data Structures */,
 				9EFFF0031AC218D800B61495 /* Breakfast.h */,
 				9EFFF0011AC218D800B61495 /* Supporting Files */,
 			);
@@ -100,6 +103,14 @@
 				9EFFF00F1AC218D800B61495 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EFFF01A1AC218E500B61495 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF01B1AC2190C00B61495 /* Stack.swift */,
+			);
+			name = "Data Structures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +331,7 @@
 		9EFFF0151AC218D800B61495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -328,12 +341,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9EFFF0161AC218D800B61495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -395,6 +410,7 @@
 				9EFFF0161AC218D800B61495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EFFF0171AC218D800B61495 /* Build configuration list for PBXNativeTarget "BreakfastTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +419,7 @@
 				9EFFF0191AC218D800B61495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
