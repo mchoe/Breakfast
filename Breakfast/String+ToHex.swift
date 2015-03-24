@@ -1,5 +1,5 @@
 //
-//  Stack.swift
+//  String+ToHex.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -29,44 +29,8 @@
 
 import Foundation
 
-public struct Stack<T> {
-    
-    public var items = [T]()
-    
-    public init() {}
-    
-    public mutating func push(itemToPush: T) {
-        self.items.append(itemToPush)
-    }
-    
-    public mutating func pop() -> T {
-        return self.items.removeLast()
-    }
-}
-
-public extension Stack {
-    
-    public var count: Int {
-        get {
-            return self.items.count
-        }
-    }
-    
-    public var isEmpty: Bool {
-        get {
-            if self.items.count > 0 {
-                return true
-            }
-            return false
-        }
-    }
-    
-    public var last: T? {
-        get {
-            if self.isEmpty == false {
-                return self.items.last
-            }
-            return nil
-        }
+public extension String {
+    func hexToInteger() -> Int {
+        return strtol(self, nil, 16)
     }
 }
