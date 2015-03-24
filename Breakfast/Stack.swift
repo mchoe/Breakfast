@@ -1,17 +1,7 @@
 //
 //  Stack.swift
-//  Sprout
-//
-//  This file is from a dynamic framework I created called Sprout. I included the
-//  files here so you didn't have to install another Cocoapod to use and test out
-//  this library. As such, this file may not be maintained as well, so use it at
-//  your own risk.
-//
-//  SwiftSVG is one of the many great tools that are a part of Sprout. If you're
-//  looking for a great start to your next Swift project, check out Sprout.
-//  It contains classes and helper functions that will get you started off right.
-//  https://github.com/mchoe/Sprout
-//
+//  Breakfast
+//  Start you next Swift project off right with Breakfast
 //
 //  Copyright (c) 2015 Michael Choe
 //  http://www.straussmade.com/
