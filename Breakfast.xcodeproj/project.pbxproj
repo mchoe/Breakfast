@@ -87,6 +87,7 @@
 				9EFFF02A1AC21FD600B61495 /* Dictionary Extensions */,
 				9EFFF02D1AC21FEB00B61495 /* NSObject Extensions */,
 				9EFFF0251AC21D8900B61495 /* String Extensions */,
+				9EFFF0301AC2208D00B61495 /* SwiftSVG */,
 				9EFFF0221AC21D1A00B61495 /* UIColor Extensions */,
 				9EFFF0031AC218D800B61495 /* Breakfast.h */,
 				9EFFF0011AC218D800B61495 /* Supporting Files */,
@@ -158,6 +159,13 @@
 				9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */,
 			);
 			name = "NSObject Extensions";
+			sourceTree = "<group>";
+		};
+		9EFFF0301AC2208D00B61495 /* SwiftSVG */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwiftSVG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

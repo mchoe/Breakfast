@@ -29,7 +29,7 @@
 
 import Foundation
 
-extension NSObject {
+public extension NSObject {
     
     //
     // Retrieves an array of property names found on the current object
