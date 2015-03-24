@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BreakfastGallery.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>9EFFF0081AC218D800B61495</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EFFF0461AC22EF900B61495</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EFFF05D1AC22EF900B61495</key>
 		<dict>
 			<key>primary</key>
 			<true/>

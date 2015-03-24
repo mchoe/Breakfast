@@ -24,6 +24,13 @@
 		9EFFF03C1AC220F300B61495 /* UIView+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0361AC220F300B61495 /* UIView+SVG.swift */; };
 		9EFFF03F1AC222A500B61495 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF03E1AC222A500B61495 /* Pipeline.swift */; };
 		9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0411AC222B200B61495 /* Benchmarking.swift */; };
+		9EFFF04C1AC22EF900B61495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */; };
+		9EFFF04F1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF04D1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld */; };
+		9EFFF0511AC22EF900B61495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0501AC22EF900B61495 /* ViewController.swift */; };
+		9EFFF0541AC22EF900B61495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0521AC22EF900B61495 /* Main.storyboard */; };
+		9EFFF0561AC22EF900B61495 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0551AC22EF900B61495 /* Images.xcassets */; };
+		9EFFF0591AC22EF900B61495 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0571AC22EF900B61495 /* LaunchScreen.xib */; };
+		9EFFF0651AC22EF900B61495 /* BreakfastGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0641AC22EF900B61495 /* BreakfastGalleryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9EFFEFFD1AC218D800B61495;
 			remoteInfo = Breakfast;
+		};
+		9EFFF05F1AC22EF900B61495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFFEFF51AC218D800B61495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFFF0461AC22EF900B61495;
+			remoteInfo = BreakfastGallery;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,6 +71,17 @@
 		9EFFF0361AC220F300B61495 /* UIView+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SVG.swift"; sourceTree = "<group>"; };
 		9EFFF03E1AC222A500B61495 /* Pipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
 		9EFFF0411AC222B200B61495 /* Benchmarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benchmarking.swift; sourceTree = "<group>"; };
+		9EFFF0471AC22EF900B61495 /* BreakfastGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakfastGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFFF04A1AC22EF900B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EFFF04E1AC22EF900B61495 /* BreakfastGallery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BreakfastGallery.xcdatamodel; sourceTree = "<group>"; };
+		9EFFF0501AC22EF900B61495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EFFF0531AC22EF900B61495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EFFF0551AC22EF900B61495 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9EFFF0581AC22EF900B61495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9EFFF05E1AC22EF900B61495 /* BreakfastGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakfastGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFFF0631AC22EF900B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFFF0641AC22EF900B61495 /* BreakfastGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastGalleryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +100,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9EFFF0441AC22EF900B61495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFFF05B1AC22EF900B61495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +122,8 @@
 			children = (
 				9EFFF0001AC218D800B61495 /* Breakfast */,
 				9EFFF00D1AC218D800B61495 /* BreakfastTests */,
+				9EFFF0481AC22EF900B61495 /* BreakfastGallery */,
+				9EFFF0611AC22EF900B61495 /* BreakfastGalleryTests */,
 				9EFFEFFF1AC218D800B61495 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +133,8 @@
 			children = (
 				9EFFEFFE1AC218D800B61495 /* Breakfast.framework */,
 				9EFFF0091AC218D800B61495 /* BreakfastTests.xctest */,
+				9EFFF0471AC22EF900B61495 /* BreakfastGallery.app */,
+				9EFFF05E1AC22EF900B61495 /* BreakfastGalleryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +251,45 @@
 			name = Benchmarking;
 			sourceTree = "<group>";
 		};
+		9EFFF0481AC22EF900B61495 /* BreakfastGallery */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */,
+				9EFFF0501AC22EF900B61495 /* ViewController.swift */,
+				9EFFF0521AC22EF900B61495 /* Main.storyboard */,
+				9EFFF0551AC22EF900B61495 /* Images.xcassets */,
+				9EFFF0571AC22EF900B61495 /* LaunchScreen.xib */,
+				9EFFF04D1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld */,
+				9EFFF0491AC22EF900B61495 /* Supporting Files */,
+			);
+			path = BreakfastGallery;
+			sourceTree = "<group>";
+		};
+		9EFFF0491AC22EF900B61495 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF04A1AC22EF900B61495 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EFFF0611AC22EF900B61495 /* BreakfastGalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF0641AC22EF900B61495 /* BreakfastGalleryTests.swift */,
+				9EFFF0621AC22EF900B61495 /* Supporting Files */,
+			);
+			path = BreakfastGalleryTests;
+			sourceTree = "<group>";
+		};
+		9EFFF0621AC22EF900B61495 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF0631AC22EF900B61495 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -258,6 +340,41 @@
 			productReference = 9EFFF0091AC218D800B61495 /* BreakfastTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9EFFF0461AC22EF900B61495 /* BreakfastGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFFF0661AC22EF900B61495 /* Build configuration list for PBXNativeTarget "BreakfastGallery" */;
+			buildPhases = (
+				9EFFF0431AC22EF900B61495 /* Sources */,
+				9EFFF0441AC22EF900B61495 /* Frameworks */,
+				9EFFF0451AC22EF900B61495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreakfastGallery;
+			productName = BreakfastGallery;
+			productReference = 9EFFF0471AC22EF900B61495 /* BreakfastGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EFFF05D1AC22EF900B61495 /* BreakfastGalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFFF0691AC22EF900B61495 /* Build configuration list for PBXNativeTarget "BreakfastGalleryTests" */;
+			buildPhases = (
+				9EFFF05A1AC22EF900B61495 /* Sources */,
+				9EFFF05B1AC22EF900B61495 /* Frameworks */,
+				9EFFF05C1AC22EF900B61495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EFFF0601AC22EF900B61495 /* PBXTargetDependency */,
+			);
+			name = BreakfastGalleryTests;
+			productName = BreakfastGalleryTests;
+			productReference = 9EFFF05E1AC22EF900B61495 /* BreakfastGalleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +390,13 @@
 					9EFFF0081AC218D800B61495 = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					9EFFF0461AC22EF900B61495 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					9EFFF05D1AC22EF900B61495 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 9EFFF0461AC22EF900B61495;
+					};
 				};
 			};
 			buildConfigurationList = 9EFFEFF81AC218D800B61495 /* Build configuration list for PBXProject "Breakfast" */;
@@ -281,6 +405,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9EFFEFF41AC218D800B61495;
 			productRefGroup = 9EFFEFFF1AC218D800B61495 /* Products */;
@@ -289,6 +414,8 @@
 			targets = (
 				9EFFEFFD1AC218D800B61495 /* Breakfast */,
 				9EFFF0081AC218D800B61495 /* BreakfastTests */,
+				9EFFF0461AC22EF900B61495 /* BreakfastGallery */,
+				9EFFF05D1AC22EF900B61495 /* BreakfastGalleryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,6 +429,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9EFFF0071AC218D800B61495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFFF0451AC22EF900B61495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFFF0541AC22EF900B61495 /* Main.storyboard in Resources */,
+				9EFFF0591AC22EF900B61495 /* LaunchScreen.xib in Resources */,
+				9EFFF0561AC22EF900B61495 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFFF05C1AC22EF900B61495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,6 +484,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9EFFF0431AC22EF900B61495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFFF0511AC22EF900B61495 /* ViewController.swift in Sources */,
+				9EFFF04F1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld in Sources */,
+				9EFFF04C1AC22EF900B61495 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFFF05A1AC22EF900B61495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFFF0651AC22EF900B61495 /* BreakfastGalleryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -348,7 +510,31 @@
 			target = 9EFFEFFD1AC218D800B61495 /* Breakfast */;
 			targetProxy = 9EFFF00B1AC218D800B61495 /* PBXContainerItemProxy */;
 		};
+		9EFFF0601AC22EF900B61495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFFF0461AC22EF900B61495 /* BreakfastGallery */;
+			targetProxy = 9EFFF05F1AC22EF900B61495 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EFFF0521AC22EF900B61495 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EFFF0531AC22EF900B61495 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EFFF0571AC22EF900B61495 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EFFF0581AC22EF900B61495 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9EFFF0121AC218D800B61495 /* Debug */ = {
@@ -499,6 +685,64 @@
 			};
 			name = Release;
 		};
+		9EFFF0671AC22EF900B61495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BreakfastGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EFFF0681AC22EF900B61495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BreakfastGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9EFFF06A1AC22EF900B61495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BreakfastGalleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakfastGallery.app/BreakfastGallery";
+			};
+			name = Debug;
+		};
+		9EFFF06B1AC22EF900B61495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BreakfastGalleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakfastGallery.app/BreakfastGallery";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -529,7 +773,36 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9EFFF0661AC22EF900B61495 /* Build configuration list for PBXNativeTarget "BreakfastGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFFF0671AC22EF900B61495 /* Debug */,
+				9EFFF0681AC22EF900B61495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9EFFF0691AC22EF900B61495 /* Build configuration list for PBXNativeTarget "BreakfastGalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFFF06A1AC22EF900B61495 /* Debug */,
+				9EFFF06B1AC22EF900B61495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9EFFF04D1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9EFFF04E1AC22EF900B61495 /* BreakfastGallery.xcdatamodel */,
+			);
+			currentVersion = 9EFFF04E1AC22EF900B61495 /* BreakfastGallery.xcdatamodel */;
+			path = BreakfastGallery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9EFFEFF51AC218D800B61495 /* Project object */;
 }
