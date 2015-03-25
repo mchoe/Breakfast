@@ -1,5 +1,5 @@
 //
-//  CAShapeLayer+SVG.swift
+//  SVGView.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -26,20 +26,38 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-
 import UIKit
 
-public extension CAShapeLayer {
+
+@IBDesignable
+public class SVGView : UIView {
     
-    convenience init(pathString: String) {
-        self.init()
-        let svgPath = UIBezierPath(pathString: pathString)
-        self.path = svgPath.CGPath
-    }
+    var shapeLayer = CAShapeLayer()
     
-    convenience init(SVGURL: NSURL) {
-        self.init()
-        let svgParser = SVGParser(SVGURL: SVGURL, containerLayer: self)
-        println("Paths: \(svgParser.paths.first)")
+    @IBInspectable var SVGName: String? {
+        didSet {
+            if let thisName = SVGName {
+                
+                //var bundle: NSBundle
+                
+                #if !TARGET_INTERFACE_BUILDER
+                    let bundle = NSBundle.mainBundle()
+                #else
+                    let bundle = NSBundle(forClass: self.dynamicType)
+                #endif
+                
+                //let bundle = NSBundle.mainBundle()
+                //let bundle = NSBundle(forClass: self.dynamicType)
+                //let bundle = NSBundle(identifier: "com.straussmade.BreakfastGallery")!
+                println("SVG: \(NSBundle.mainBundle().bundleIdentifier)")
+                if let url = bundle.URLForResource(thisName, withExtension: "svg") {
+                    self.shapeLayer = CAShapeLayer(SVGURL: url)
+                    if self.shapeLayer.superlayer == nil {
+                        self.layer.addSublayer(self.shapeLayer)
+                    }
+                }
+                
+            }
+        }
     }
 }

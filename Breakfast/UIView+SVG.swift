@@ -1,5 +1,5 @@
 //
-//  CAShapeLayer+SVG.swift
+//  UIView+SVG.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -26,20 +26,20 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-
+import Foundation
 import UIKit
 
-public extension CAShapeLayer {
+public extension UIView {
     
     convenience init(pathString: String) {
         self.init()
-        let svgPath = UIBezierPath(pathString: pathString)
-        self.path = svgPath.CGPath
+        let shapeLayer = CAShapeLayer(pathString: pathString)
+        self.layer.addSublayer(shapeLayer)
     }
     
     convenience init(SVGURL: NSURL) {
         self.init()
-        let svgParser = SVGParser(SVGURL: SVGURL, containerLayer: self)
-        println("Paths: \(svgParser.paths.first)")
+        let shapeLayer = CAShapeLayer(SVGURL: SVGURL)
+        self.layer.addSublayer(shapeLayer)
     }
 }

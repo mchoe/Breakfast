@@ -26,11 +26,15 @@
 		9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0411AC222B200B61495 /* Benchmarking.swift */; };
 		9EFFF04C1AC22EF900B61495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */; };
 		9EFFF04F1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF04D1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld */; };
-		9EFFF0511AC22EF900B61495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0501AC22EF900B61495 /* ViewController.swift */; };
+		9EFFF0511AC22EF900B61495 /* GalleryRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0501AC22EF900B61495 /* GalleryRootViewController.swift */; };
 		9EFFF0541AC22EF900B61495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0521AC22EF900B61495 /* Main.storyboard */; };
 		9EFFF0561AC22EF900B61495 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0551AC22EF900B61495 /* Images.xcassets */; };
 		9EFFF0591AC22EF900B61495 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0571AC22EF900B61495 /* LaunchScreen.xib */; };
 		9EFFF0651AC22EF900B61495 /* BreakfastGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0641AC22EF900B61495 /* BreakfastGalleryTests.swift */; };
+		9EFFF06F1AC234E600B61495 /* SwiftSVGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF06E1AC234E600B61495 /* SwiftSVGViewController.swift */; };
+		9EFFF0711AC2363000B61495 /* hawaiiFlowers.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0701AC2363000B61495 /* hawaiiFlowers.svg */; };
+		9EFFF0721AC2389000B61495 /* Breakfast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFFEFFE1AC218D800B61495 /* Breakfast.framework */; };
+		9EFFF0731AC2389000B61495 /* Breakfast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFFEFFE1AC218D800B61495 /* Breakfast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +52,28 @@
 			remoteGlobalIDString = 9EFFF0461AC22EF900B61495;
 			remoteInfo = BreakfastGallery;
 		};
+		9EFFF0741AC2389000B61495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFFEFF51AC218D800B61495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFFEFFD1AC218D800B61495;
+			remoteInfo = Breakfast;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9EFFF0761AC2389000B61495 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9EFFF0731AC2389000B61495 /* Breakfast.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9EFFEFFE1AC218D800B61495 /* Breakfast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Breakfast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,13 +100,15 @@
 		9EFFF04A1AC22EF900B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EFFF04E1AC22EF900B61495 /* BreakfastGallery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BreakfastGallery.xcdatamodel; sourceTree = "<group>"; };
-		9EFFF0501AC22EF900B61495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EFFF0501AC22EF900B61495 /* GalleryRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryRootViewController.swift; sourceTree = "<group>"; };
 		9EFFF0531AC22EF900B61495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EFFF0551AC22EF900B61495 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9EFFF0581AC22EF900B61495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9EFFF05E1AC22EF900B61495 /* BreakfastGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakfastGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFFF0631AC22EF900B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFFF0641AC22EF900B61495 /* BreakfastGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastGalleryTests.swift; sourceTree = "<group>"; };
+		9EFFF06E1AC234E600B61495 /* SwiftSVGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSVGViewController.swift; sourceTree = "<group>"; };
+		9EFFF0701AC2363000B61495 /* hawaiiFlowers.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = hawaiiFlowers.svg; path = BreakfastGallery/hawaiiFlowers.svg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFFF0721AC2389000B61495 /* Breakfast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +282,9 @@
 		9EFFF0481AC22EF900B61495 /* BreakfastGallery */ = {
 			isa = PBXGroup;
 			children = (
+				9EFFF06C1AC234C600B61495 /* Gallery Root */,
+				9EFFF06D1AC234D000B61495 /* SwiftSVG */,
 				9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */,
-				9EFFF0501AC22EF900B61495 /* ViewController.swift */,
 				9EFFF0521AC22EF900B61495 /* Main.storyboard */,
 				9EFFF0551AC22EF900B61495 /* Images.xcassets */,
 				9EFFF0571AC22EF900B61495 /* LaunchScreen.xib */,
@@ -268,6 +297,7 @@
 		9EFFF0491AC22EF900B61495 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9EFFF0701AC2363000B61495 /* hawaiiFlowers.svg */,
 				9EFFF04A1AC22EF900B61495 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -288,6 +318,22 @@
 				9EFFF0631AC22EF900B61495 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EFFF06C1AC234C600B61495 /* Gallery Root */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF0501AC22EF900B61495 /* GalleryRootViewController.swift */,
+			);
+			name = "Gallery Root";
+			sourceTree = "<group>";
+		};
+		9EFFF06D1AC234D000B61495 /* SwiftSVG */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFF06E1AC234E600B61495 /* SwiftSVGViewController.swift */,
+			);
+			name = SwiftSVG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,10 +393,12 @@
 				9EFFF0431AC22EF900B61495 /* Sources */,
 				9EFFF0441AC22EF900B61495 /* Frameworks */,
 				9EFFF0451AC22EF900B61495 /* Resources */,
+				9EFFF0761AC2389000B61495 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9EFFF0751AC2389000B61495 /* PBXTargetDependency */,
 			);
 			name = BreakfastGallery;
 			productName = BreakfastGallery;
@@ -442,6 +490,7 @@
 				9EFFF0541AC22EF900B61495 /* Main.storyboard in Resources */,
 				9EFFF0591AC22EF900B61495 /* LaunchScreen.xib in Resources */,
 				9EFFF0561AC22EF900B61495 /* Images.xcassets in Resources */,
+				9EFFF0711AC2363000B61495 /* hawaiiFlowers.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,9 +537,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EFFF0511AC22EF900B61495 /* ViewController.swift in Sources */,
+				9EFFF0511AC22EF900B61495 /* GalleryRootViewController.swift in Sources */,
 				9EFFF04F1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld in Sources */,
 				9EFFF04C1AC22EF900B61495 /* AppDelegate.swift in Sources */,
+				9EFFF06F1AC234E600B61495 /* SwiftSVGViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +564,11 @@
 			isa = PBXTargetDependency;
 			target = 9EFFF0461AC22EF900B61495 /* BreakfastGallery */;
 			targetProxy = 9EFFF05F1AC22EF900B61495 /* PBXContainerItemProxy */;
+		};
+		9EFFF0751AC2389000B61495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFFEFFD1AC218D800B61495 /* Breakfast */;
+			targetProxy = 9EFFF0741AC2389000B61495 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -689,6 +744,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -703,6 +759,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BreakfastGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -780,6 +837,7 @@
 				9EFFF0681AC22EF900B61495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EFFF0691AC22EF900B61495 /* Build configuration list for PBXNativeTarget "BreakfastGalleryTests" */ = {
 			isa = XCConfigurationList;
@@ -788,6 +846,7 @@
 				9EFFF06B1AC22EF900B61495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
