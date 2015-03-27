@@ -1,5 +1,5 @@
 //
-//  NSObject+Extensions.swift
+//  NSObject+ClassName.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -29,37 +29,10 @@
 
 import Foundation
 
-public extension NSObject {
-    
-    //
-    // Retrieves an array of property names found on the current object
-    // using Objective-C runtime functions for introspection:
-    // https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtPropertyIntrospection.html
-    //
-    func propertyNames() -> Array<String> {
-        var results: Array<String> = [];
-        
-        // retrieve the properties via the class_copyPropertyList function
-        var count: UInt32 = 0;
-        var myClass: AnyClass = self.classForCoder;
-        var properties = class_copyPropertyList(myClass, &count);
-        
-        // iterate each objc_property_t struct
-        for var i: UInt32 = 0; i < count; i++ {
-            var property = properties[Int(i)];
-            
-            // retrieve the property name by calling property_getName function
-            var cname = property_getName(property);
-            
-            // covert the c string into a Swift string
-            var name = String.fromCString(cname);
-            results.append(name!);
-        }
-        
-        // release objc_property_t structs
-        free(properties);
-        
-        return results;
+extension NSObject {
+    func classNameAsString() -> String {
+        let thisClass: AnyClass = self.classForCoder
+        let classString: String = NSStringFromClass(thisClass)
+        return classString
     }
-    
 }
