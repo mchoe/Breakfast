@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EFF26331AC5E95D0019DC5B /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */; };
+		9EFF26351AC5E9810019DC5B /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF26341AC5E9810019DC5B /* NSObject+ClassName.swift */; };
 		9EFFF0041AC218D800B61495 /* Breakfast.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EFFF0031AC218D800B61495 /* Breakfast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EFFF00A1AC218D800B61495 /* Breakfast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFFEFFE1AC218D800B61495 /* Breakfast.framework */; };
 		9EFFF0111AC218D800B61495 /* BreakfastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0101AC218D800B61495 /* BreakfastTests.swift */; };
@@ -76,6 +78,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
+		9EFF26341AC5E9810019DC5B /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		9EFFEFFE1AC218D800B61495 /* Breakfast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Breakfast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFFF0021AC218D800B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFFF0031AC218D800B61495 /* Breakfast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Breakfast.h; sourceTree = "<group>"; };
@@ -145,6 +149,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EFF26311AC5E9450019DC5B /* UIView Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */,
+			);
+			name = "UIView Extensions";
+			sourceTree = "<group>";
+		};
 		9EFFEFF41AC218D800B61495 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +190,7 @@
 				9EFFF0251AC21D8900B61495 /* String Extensions */,
 				9EFFF0301AC2208D00B61495 /* SwiftSVG */,
 				9EFFF0221AC21D1A00B61495 /* UIColor Extensions */,
+				9EFF26311AC5E9450019DC5B /* UIView Extensions */,
 				9EFFF0031AC218D800B61495 /* Breakfast.h */,
 				9EFFF0011AC218D800B61495 /* Supporting Files */,
 			);
@@ -245,6 +258,7 @@
 		9EFFF02D1AC21FEB00B61495 /* NSObject Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9EFF26341AC5E9810019DC5B /* NSObject+ClassName.swift */,
 				9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */,
 			);
 			name = "NSObject Extensions";
@@ -508,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFF26331AC5E95D0019DC5B /* UIView+Shake.swift in Sources */,
 				9EFFF0281AC21D9800B61495 /* String+Subscript.swift in Sources */,
 				9EFFF03A1AC220F300B61495 /* SVGView.swift in Sources */,
 				9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */,
@@ -520,6 +535,7 @@
 				9EFFF03F1AC222A500B61495 /* Pipeline.swift in Sources */,
 				9EFFF02C1AC21FE300B61495 /* Dictionary+KeyForValue.swift in Sources */,
 				9EFFF0291AC21D9800B61495 /* String+ToHex.swift in Sources */,
+				9EFF26351AC5E9810019DC5B /* NSObject+ClassName.swift in Sources */,
 				9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */,
 				9EFFF03C1AC220F300B61495 /* UIView+SVG.swift in Sources */,
 			);

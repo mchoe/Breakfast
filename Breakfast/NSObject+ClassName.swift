@@ -29,7 +29,7 @@
 
 import Foundation
 
-extension NSObject {
+public extension NSObject {
     func classNameAsString() -> String {
         let thisClass: AnyClass = self.classForCoder
         let classString: String = NSStringFromClass(thisClass)
