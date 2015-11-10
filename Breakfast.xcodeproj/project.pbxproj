@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */; };
+		8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C8C491BF171FE00B93D87 /* Matrix.swift */; };
 		9EFF26331AC5E95D0019DC5B /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */; };
 		9EFF26351AC5E9810019DC5B /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF26341AC5E9810019DC5B /* NSObject+ClassName.swift */; };
 		9EFFF0041AC218D800B61495 /* Breakfast.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EFFF0031AC218D800B61495 /* Breakfast.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SequenceType.swift"; sourceTree = "<group>"; };
+		8A5C8C491BF171FE00B93D87 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
 		9EFF26341AC5E9810019DC5B /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		9EFFEFFE1AC218D800B61495 /* Breakfast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Breakfast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				9EFFF01B1AC2190C00B61495 /* Stack.swift */,
+				8A5C8C491BF171FE00B93D87 /* Matrix.swift */,
 			);
 			name = "Data Structures";
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 			files = (
 				9EFF26331AC5E95D0019DC5B /* UIView+Shake.swift in Sources */,
 				8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */,
+				8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */,
 				9EFFF0281AC21D9800B61495 /* String+Subscript.swift in Sources */,
 				9EFFF03A1AC220F300B61495 /* SVGView.swift in Sources */,
 				9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */,
