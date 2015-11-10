@@ -34,14 +34,14 @@ public extension String {
     
     subscript(index: Int) -> Character {
         get {
-            let index = advance(self.startIndex, index)
+            let index = self.startIndex.advancedBy(index)
             return self[index]
         }
     }
     
     subscript(integerRange: Range<Int>) -> String {
-        let start = advance(startIndex, integerRange.startIndex)
-        let end = advance(startIndex, integerRange.endIndex)
+        let start = self.startIndex.advancedBy(integerRange.startIndex)
+        let end = self.startIndex.advancedBy(integerRange.endIndex)
         let range = start..<end
         return self[range]
     }

@@ -35,18 +35,18 @@ public extension UIColor {
         
         var workingString = hexString
         if workingString.hasPrefix("#") {
-            workingString = dropFirst(workingString)
+            workingString = String(workingString.characters.dropFirst())
         }
         
         var hexRed = "00"
         var hexGreen = "00"
         var hexBlue = "00"
         
-        if workingString.utf16Count == 6 {
+        if workingString.characters.count == 6 {
             hexRed = workingString[0...1]
             hexGreen = workingString[2...3]
             hexBlue = workingString[4...5]
-        } else if workingString.utf16Count == 3 {
+        } else if workingString.characters.count == 3 {
             let redValue = workingString[0]
             let greenValue = workingString[1]
             let blueValue = workingString[2]

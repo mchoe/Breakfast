@@ -8,43 +8,56 @@
 
 import UIKit
 
-class GalleryRootViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class GalleryRootViewController: UIViewController, UITableViewDelegate {
     
-    var rootDict = [
-        "SwiftSVG" : "rootToSwiftSVGSegue"
-    ]
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    enum GalleryTableItemType {
+        case Segue(String)
     }
     
-    // MARK: UITableView Data Source
+    struct GalleryTableItem {
+        let type: GalleryTableItemType
+        let title: String
+    }
+    
+    let tableData = [
+        GalleryTableItem(type: .Segue("rootToSwiftSVGSegue"), title: "SwiftSVG")
+    ]
+    
+}
+
+extension GalleryRootViewController: UITableViewDataSource {
+    
+    // MARK: - UITableView Data Source
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return self.rootDict.count
+        return self.tableData.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if let returnCell = tableView.dequeueReusableCellWithIdentifier("RootGalleryCell") as? UITableViewCell {
-            
-            let dictAsArray = self.rootDict.keys
-            let thisRootTitle = dictAsArray.array[indexPath.row]
-            returnCell.textLabel!.text = thisRootTitle
+        if let returnCell = tableView.dequeueReusableCellWithIdentifier("RootGalleryCell") {
+            let thisTableData = self.tableData[indexPath.row]
+            returnCell.textLabel!.text = thisTableData.title
             return returnCell
         }
         return UITableViewCell()
     }
-    
+}
+
+extension GalleryRootViewController: UITableViewDelegate {
     // MARK: UITableView Delegate
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let thisTableData = self.tableData[indexPath.row]
+        switch thisTableData.type {
+        case .Segue(let identifier):
+            self.performSegueWithIdentifier(identifier, sender: self)
+        }
         
-        let thisKey = self.rootDict.keys.array[indexPath.row]
-        self.performSegueWithIdentifier(self.rootDict[thisKey], sender: self)
     }
 }
+
+
+
 

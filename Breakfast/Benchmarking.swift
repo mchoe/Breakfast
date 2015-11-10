@@ -40,14 +40,14 @@ public func benchmark(functionToBenchmark: () -> Void) -> CFTimeInterval {
     return endTime - startTime
 }
 
-public func benchmark(repeat: Int, functionToBenchmark: () -> Void) -> CFTimeInterval {
+public func benchmark(repeatCount: Int, functionToBenchmark: () -> Void) -> CFTimeInterval {
     
     var timeArray = [CFTimeInterval]()
     
-    for index in 1...repeat {
+    for _ in 1...repeatCount {
         timeArray.append(benchmark(functionToBenchmark))
     }
     let sum = timeArray.reduce(0, combine: +)
-    return sum / CFTimeInterval(repeat)
+    return sum / CFTimeInterval(repeatCount)
     
 }

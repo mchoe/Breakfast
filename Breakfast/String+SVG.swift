@@ -41,7 +41,7 @@ private struct NumberStack {
     var characterStack: String = ""
     var asCGFloat: CGFloat? {
         get {
-            if self.characterStack.utf16Count > 0 {
+            if self.characterStack.characters.count > 0 {
                 return CGFloat(strtod(self.characterStack, nil))
             }
             return nil
@@ -49,7 +49,7 @@ private struct NumberStack {
     }
     var isEmpty: Bool {
         get {
-            if self.characterStack.utf16Count > 0 {
+            if self.characterStack.characters.count > 0 {
                 return false
             }
             return true
@@ -82,7 +82,7 @@ private struct PreviousCommand {
 
 private protocol Commandable {
     var numberOfRequiredParameters: Int { get }
-    func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand?)
+    func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand?)
 }
 
 /////////////////////////////////////////////////////
@@ -124,7 +124,7 @@ private class PathCommand : PathCharacter, Commandable {
         self.pathType = pathType
     }
     
-    func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         assert(false, "Subclasses must implement this method")
     }
     
@@ -178,7 +178,7 @@ private class MoveTo : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         let point = self.pointForPathType(CGPointMake(self.parameters[0], self.parameters[1]))
         forPath.moveToPoint(point)
     }
@@ -192,7 +192,7 @@ private class ClosePath : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         forPath.closePath()
     }
 }
@@ -205,7 +205,7 @@ private class LineTo : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         let point = self.pointForPathType(CGPointMake(self.parameters[0], self.parameters[1]))
         forPath.addLineToPoint(point)
     }
@@ -219,7 +219,7 @@ private class HorizontalLineTo : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         let x = self.parameters[0]
         let point = (self.pathType == PathType.Absolute ? CGPointMake(x, forPath.currentPoint.y) : CGPointMake(forPath.currentPoint.x + x, forPath.currentPoint.y))
         forPath.addLineToPoint(point)
@@ -234,7 +234,7 @@ private class VerticalLineTo : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         let y = self.parameters[0]
         let point = (self.pathType == PathType.Absolute ? CGPointMake(forPath.currentPoint.x, y) : CGPointMake(forPath.currentPoint.x, forPath.currentPoint.y + y))
         forPath.addLineToPoint(point)
@@ -249,7 +249,7 @@ private class CurveTo : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         let startControl = self.pointForPathType(CGPointMake(self.parameters[0], self.parameters[1]))
         let endControl = self.pointForPathType(CGPointMake(self.parameters[2], self.parameters[3]))
         let point = self.pointForPathType(CGPointMake(self.parameters[4], self.parameters[5]))
@@ -265,7 +265,7 @@ private class SmoothCurveTo : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         
         if let previousParams = previousCommand?.parameters {
             
@@ -318,7 +318,7 @@ private class QuadraticCurveTo : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         let controlPoint = self.pointForPathType(CGPointMake(self.parameters[0], self.parameters[1]))
         let point = self.pointForPathType(CGPointMake(self.parameters[2], self.parameters[3]))
         forPath.addQuadCurveToPoint(point, controlPoint: controlPoint)
@@ -333,7 +333,7 @@ private class SmoothQuadraticCurveTo : PathCommand {
         }
     }
     
-    override func execute(#forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
+    override func execute(forPath forPath: UIBezierPath, previousCommand: PreviousCommand? = nil) {
         
         if let previousParams = previousCommand?.parameters {
             
@@ -455,13 +455,13 @@ func parseSVGPath(pathString: String, forPath: UIBezierPath? = nil) -> UIBezierP
         }
         
         for thisCharacter in workingString {
-            if var pathCharacter = characterDictionary[thisCharacter] {
+            if let pathCharacter = characterDictionary[thisCharacter] {
                 
                 if pathCharacter is PathCommand {
                     
                     pushCoordinateAndClear()
                     
-                    currentPathCommand = pathCharacter as PathCommand
+                    currentPathCommand = pathCharacter as! PathCommand
                     currentPathCommand.path = returnPath
                     
                     if currentPathCommand.character == "Z" || currentPathCommand.character == "z" {
