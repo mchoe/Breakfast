@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GalleryRootViewController: UIViewController, UITableViewDelegate {
+class GalleryRootViewController: UIViewController {
     
     enum GalleryTableItemType {
         case Segue(String)
