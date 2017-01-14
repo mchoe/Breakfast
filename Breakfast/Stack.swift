@@ -35,7 +35,7 @@ public struct Stack<T> {
     
     public init() {}
     
-    public mutating func push(itemToPush: T) {
+    public mutating func push(_ itemToPush: T) {
         self.items.append(itemToPush)
     }
     

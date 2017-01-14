@@ -33,21 +33,21 @@ import Foundation
 //
 // MARK: Benchmarking
 
-public func benchmark(functionToBenchmark: () -> Void) -> CFTimeInterval {
+public func benchmark(_ functionToBenchmark: () -> Void) -> CFTimeInterval {
     let startTime = CACurrentMediaTime()
     functionToBenchmark()
     let endTime = CACurrentMediaTime()
     return endTime - startTime
 }
 
-public func benchmark(repeatCount: Int, functionToBenchmark: () -> Void) -> CFTimeInterval {
+public func benchmark(_ repeatCount: Int, functionToBenchmark: () -> Void) -> CFTimeInterval {
     
     var timeArray = [CFTimeInterval]()
     
     for _ in 1...repeatCount {
         timeArray.append(benchmark(functionToBenchmark))
     }
-    let sum = timeArray.reduce(0, combine: +)
+    let sum = timeArray.reduce(0, +)
     return sum / CFTimeInterval(repeatCount)
     
 }

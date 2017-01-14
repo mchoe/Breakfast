@@ -11,7 +11,7 @@ import UIKit
 class GalleryRootViewController: UIViewController {
     
     enum GalleryTableItemType {
-        case Segue(String)
+        case segue(String)
     }
     
     struct GalleryTableItem {
@@ -19,9 +19,7 @@ class GalleryRootViewController: UIViewController {
         let title: String
     }
     
-    let tableData = [
-        GalleryTableItem(type: .Segue("rootToSwiftSVGSegue"), title: "SwiftSVG")
-    ]
+    let tableData = [GalleryTableItem]()
     
 }
 
@@ -29,13 +27,13 @@ extension GalleryRootViewController: UITableViewDataSource {
     
     // MARK: - UITableView Data Source
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.tableData.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let returnCell = tableView.dequeueReusableCellWithIdentifier("RootGalleryCell") {
+        if let returnCell = tableView.dequeueReusableCell(withIdentifier: "RootGalleryCell") {
             let thisTableData = self.tableData[indexPath.row]
             returnCell.textLabel!.text = thisTableData.title
             return returnCell
@@ -47,12 +45,12 @@ extension GalleryRootViewController: UITableViewDataSource {
 extension GalleryRootViewController: UITableViewDelegate {
     // MARK: UITableView Delegate
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let thisTableData = self.tableData[indexPath.row]
         switch thisTableData.type {
-        case .Segue(let identifier):
-            self.performSegueWithIdentifier(identifier, sender: self)
+        case .segue(let identifier):
+            self.performSegue(withIdentifier: identifier, sender: self)
         }
         
     }

@@ -9,16 +9,17 @@
 import Foundation
 
 
-extension String: SequenceType {
+extension String: Sequence {
     
-    public typealias Generator = AnyGenerator<Character>
+    public typealias Iterator = AnyIterator<Character>
     
-    public func generate() -> Generator {
+    public func makeIterator() -> Iterator {
         var index = 0
         
-        return anyGenerator({ () -> Character? in
+        return AnyIterator({ () -> Character? in
             if index < self.characters.count {
-                return self[index++]
+                index += 1
+                return self[index]
             }
             return nil
         })

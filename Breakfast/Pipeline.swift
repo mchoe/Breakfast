@@ -30,6 +30,6 @@
 import Foundation
 
 infix operator |> { associativity left }
-func |> <T,U>(left: T, right: T -> U) -> U {
+func |> <T,U>(left: T, right: (T) -> U) -> U {
     return right(left)
 }

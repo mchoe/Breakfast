@@ -47,7 +47,7 @@ public struct Matrix<T> {
         }
     }
     
-    public private(set) var elements: Array<T>
+    public fileprivate(set) var elements: Array<T>
     
     init(matrix: [[T]]) {
         
@@ -73,11 +73,11 @@ public struct Matrix<T> {
 }
 
 private extension Matrix {
-    func linearIndex(row: Int, column: Int) -> Int {
+    func linearIndex(_ row: Int, column: Int) -> Int {
         return row * self.columnCount + column
     }
     
-    func coordinates(linearIndex: Int) -> (row: Int, column: Int) {
+    func coordinates(_ linearIndex: Int) -> (row: Int, column: Int) {
         return (row: linearIndex / self.columnCount, column: linearIndex % self.columnCount)
     }
 }
@@ -95,15 +95,15 @@ public extension Matrix {
         }
     }
     
-    public mutating func add(element: T) {
+    public mutating func add(_ element: T) {
         assert(false, "Needs Implementing")
     }
     
-    public mutating func addColumn(column: T) {
+    public mutating func addColumn(_ column: T) {
         assert(false, "Needs Implementing")
     }
     
-    public mutating func addRow(row: [T]) {
+    public mutating func addRow(_ row: [T]) {
         precondition(self.elements.count % row.count == 0, "Column count must be the same for all rows")
         
         if self.columnCount != row.count {
@@ -111,7 +111,7 @@ public extension Matrix {
         }
         
         self.elements += row
-        self.rowCount++
+        self.rowCount += 1
     }
     
     
@@ -125,16 +125,17 @@ extension Matrix: CustomStringConvertible {
     
 }
 
-extension Matrix: SequenceType {
+extension Matrix: Sequence {
     
-    public typealias Generator = AnyGenerator<T>
+    public typealias Iterator = AnyIterator<T>
     
-    public func generate() -> Generator {
+    public func makeIterator() -> Iterator {
         var currentIndex = 0
         
-        return anyGenerator({ () -> T? in
+        return AnyIterator({ () -> T? in
             if currentIndex < self.totalElementCount {
-                return self.elements[currentIndex++]
+                currentIndex += 1
+                return self.elements[currentIndex]
             }
             return nil
         })
@@ -143,7 +144,7 @@ extension Matrix: SequenceType {
 }
 
 
-public struct MatrixReverseGenerator<T>: GeneratorType {
+public struct MatrixReverseGenerator<T>: IteratorProtocol {
     
     public typealias Element = T
     let matrix: Matrix<T>
@@ -156,7 +157,8 @@ public struct MatrixReverseGenerator<T>: GeneratorType {
     
     mutating public func next() -> Element? {
         if self.currentIndex >= 0 {
-            return self.matrix.elements[self.currentIndex--]
+            currentIndex -= 1
+            return self.matrix.elements[self.currentIndex]
         }
         return nil
     }

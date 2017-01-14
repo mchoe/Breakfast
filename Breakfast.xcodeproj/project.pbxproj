@@ -20,12 +20,6 @@
 		9EFFF0291AC21D9800B61495 /* String+ToHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0271AC21D9800B61495 /* String+ToHex.swift */; };
 		9EFFF02C1AC21FE300B61495 /* Dictionary+KeyForValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF02B1AC21FE300B61495 /* Dictionary+KeyForValue.swift */; };
 		9EFFF02F1AC21FF500B61495 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */; };
-		9EFFF0371AC220F300B61495 /* CAShapeLayer+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0311AC220F300B61495 /* CAShapeLayer+SVG.swift */; };
-		9EFFF0381AC220F300B61495 /* String+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0321AC220F300B61495 /* String+SVG.swift */; };
-		9EFFF0391AC220F300B61495 /* SVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0331AC220F300B61495 /* SVGParser.swift */; };
-		9EFFF03A1AC220F300B61495 /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0341AC220F300B61495 /* SVGView.swift */; };
-		9EFFF03B1AC220F300B61495 /* UIBezierPath+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0351AC220F300B61495 /* UIBezierPath+SVG.swift */; };
-		9EFFF03C1AC220F300B61495 /* UIView+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0361AC220F300B61495 /* UIView+SVG.swift */; };
 		9EFFF03F1AC222A500B61495 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF03E1AC222A500B61495 /* Pipeline.swift */; };
 		9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0411AC222B200B61495 /* Benchmarking.swift */; };
 		9EFFF04C1AC22EF900B61495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */; };
@@ -35,7 +29,6 @@
 		9EFFF0561AC22EF900B61495 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0551AC22EF900B61495 /* Images.xcassets */; };
 		9EFFF0591AC22EF900B61495 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0571AC22EF900B61495 /* LaunchScreen.xib */; };
 		9EFFF0651AC22EF900B61495 /* BreakfastGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0641AC22EF900B61495 /* BreakfastGalleryTests.swift */; };
-		9EFFF06F1AC234E600B61495 /* SwiftSVGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF06E1AC234E600B61495 /* SwiftSVGViewController.swift */; };
 		9EFFF0711AC2363000B61495 /* hawaiiFlowers.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9EFFF0701AC2363000B61495 /* hawaiiFlowers.svg */; };
 		9EFFF0721AC2389000B61495 /* Breakfast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFFEFFE1AC218D800B61495 /* Breakfast.framework */; };
 		9EFFF0731AC2389000B61495 /* Breakfast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFFEFFE1AC218D800B61495 /* Breakfast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -96,12 +89,6 @@
 		9EFFF0271AC21D9800B61495 /* String+ToHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ToHex.swift"; sourceTree = "<group>"; };
 		9EFFF02B1AC21FE300B61495 /* Dictionary+KeyForValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyForValue.swift"; sourceTree = "<group>"; };
 		9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
-		9EFFF0311AC220F300B61495 /* CAShapeLayer+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+SVG.swift"; sourceTree = "<group>"; };
-		9EFFF0321AC220F300B61495 /* String+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SVG.swift"; sourceTree = "<group>"; };
-		9EFFF0331AC220F300B61495 /* SVGParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGParser.swift; sourceTree = "<group>"; };
-		9EFFF0341AC220F300B61495 /* SVGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
-		9EFFF0351AC220F300B61495 /* UIBezierPath+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+SVG.swift"; sourceTree = "<group>"; };
-		9EFFF0361AC220F300B61495 /* UIView+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SVG.swift"; sourceTree = "<group>"; };
 		9EFFF03E1AC222A500B61495 /* Pipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
 		9EFFF0411AC222B200B61495 /* Benchmarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benchmarking.swift; sourceTree = "<group>"; };
 		9EFFF0471AC22EF900B61495 /* BreakfastGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakfastGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +102,6 @@
 		9EFFF05E1AC22EF900B61495 /* BreakfastGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakfastGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFFF0631AC22EF900B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFFF0641AC22EF900B61495 /* BreakfastGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastGalleryTests.swift; sourceTree = "<group>"; };
-		9EFFF06E1AC234E600B61495 /* SwiftSVGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSVGViewController.swift; sourceTree = "<group>"; };
 		9EFFF0701AC2363000B61495 /* hawaiiFlowers.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = hawaiiFlowers.svg; path = BreakfastGallery/hawaiiFlowers.svg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -192,7 +178,6 @@
 				9EFFF02D1AC21FEB00B61495 /* NSObject Extensions */,
 				9EFFF03D1AC2229B00B61495 /* Operators */,
 				9EFFF0251AC21D8900B61495 /* String Extensions */,
-				9EFFF0301AC2208D00B61495 /* SwiftSVG */,
 				9EFFF0221AC21D1A00B61495 /* UIColor Extensions */,
 				9EFF26311AC5E9450019DC5B /* UIView Extensions */,
 				9EFFF0031AC218D800B61495 /* Breakfast.h */,
@@ -270,19 +255,6 @@
 			name = "NSObject Extensions";
 			sourceTree = "<group>";
 		};
-		9EFFF0301AC2208D00B61495 /* SwiftSVG */ = {
-			isa = PBXGroup;
-			children = (
-				9EFFF0311AC220F300B61495 /* CAShapeLayer+SVG.swift */,
-				9EFFF0321AC220F300B61495 /* String+SVG.swift */,
-				9EFFF0331AC220F300B61495 /* SVGParser.swift */,
-				9EFFF0341AC220F300B61495 /* SVGView.swift */,
-				9EFFF0351AC220F300B61495 /* UIBezierPath+SVG.swift */,
-				9EFFF0361AC220F300B61495 /* UIView+SVG.swift */,
-			);
-			name = SwiftSVG;
-			sourceTree = "<group>";
-		};
 		9EFFF03D1AC2229B00B61495 /* Operators */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				9EFFF06C1AC234C600B61495 /* Gallery Root */,
-				9EFFF06D1AC234D000B61495 /* SwiftSVG */,
 				9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */,
 				9EFFF0521AC22EF900B61495 /* Main.storyboard */,
 				9EFFF0551AC22EF900B61495 /* Images.xcassets */,
@@ -346,14 +317,6 @@
 				9EFFF0501AC22EF900B61495 /* GalleryRootViewController.swift */,
 			);
 			name = "Gallery Root";
-			sourceTree = "<group>";
-		};
-		9EFFF06D1AC234D000B61495 /* SwiftSVG */ = {
-			isa = PBXGroup;
-			children = (
-				9EFFF06E1AC234E600B61495 /* SwiftSVGViewController.swift */,
-			);
-			name = SwiftSVG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,20 +413,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Strauss LLC";
 				TargetAttributes = {
 					9EFFEFFD1AC218D800B61495 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = L2JNG48FS5;
+						LastSwiftMigration = 0820;
 					};
 					9EFFF0081AC218D800B61495 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0820;
 					};
 					9EFFF0461AC22EF900B61495 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = L2JNG48FS5;
+						LastSwiftMigration = 0820;
 					};
 					9EFFF05D1AC22EF900B61495 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0820;
 						TestTargetID = 9EFFF0461AC22EF900B61495;
 					};
 				};
@@ -533,20 +502,14 @@
 				8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */,
 				8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */,
 				9EFFF0281AC21D9800B61495 /* String+Subscript.swift in Sources */,
-				9EFFF03A1AC220F300B61495 /* SVGView.swift in Sources */,
 				9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */,
 				9EFFF0241AC21D2C00B61495 /* UIColor+Extensions.swift in Sources */,
-				9EFFF03B1AC220F300B61495 /* UIBezierPath+SVG.swift in Sources */,
-				9EFFF0371AC220F300B61495 /* CAShapeLayer+SVG.swift in Sources */,
 				9EFFF02F1AC21FF500B61495 /* NSObject+Extensions.swift in Sources */,
-				9EFFF0391AC220F300B61495 /* SVGParser.swift in Sources */,
-				9EFFF0381AC220F300B61495 /* String+SVG.swift in Sources */,
 				9EFFF03F1AC222A500B61495 /* Pipeline.swift in Sources */,
 				9EFFF02C1AC21FE300B61495 /* Dictionary+KeyForValue.swift in Sources */,
 				9EFFF0291AC21D9800B61495 /* String+ToHex.swift in Sources */,
 				9EFF26351AC5E9810019DC5B /* NSObject+ClassName.swift in Sources */,
 				9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */,
-				9EFFF03C1AC220F300B61495 /* UIView+SVG.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +528,6 @@
 				9EFFF0511AC22EF900B61495 /* GalleryRootViewController.swift in Sources */,
 				9EFFF04F1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld in Sources */,
 				9EFFF04C1AC22EF900B61495 /* AppDelegate.swift in Sources */,
-				9EFFF06F1AC234E600B61495 /* SwiftSVGViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,8 +592,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -641,6 +605,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -677,8 +642,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -687,6 +654,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -696,6 +664,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -707,7 +676,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L2JNG48FS5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -718,6 +689,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -725,7 +697,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L2JNG48FS5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -735,6 +709,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -753,6 +728,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -767,14 +743,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		9EFFF0671AC22EF900B61495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = L2JNG48FS5;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -783,18 +761,21 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		9EFFF0681AC22EF900B61495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = L2JNG48FS5;
 				INFOPLIST_FILE = BreakfastGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -814,6 +795,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakfastGallery.app/BreakfastGallery";
 			};
 			name = Debug;
@@ -830,6 +812,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakfastGallery.app/BreakfastGallery";
 			};
 			name = Release;

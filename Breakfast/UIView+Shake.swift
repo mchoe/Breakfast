@@ -31,15 +31,15 @@ import UIKit
 
 public extension UIView {
     
-    func shake(numberOfTimes: Float = 3, offset: CGFloat = 14.0) {
+    func shake(_ numberOfTimes: Float = 3, offset: CGFloat = 14.0) {
         
         let shakeAnimation = CABasicAnimation(keyPath: "position")
         shakeAnimation.duration = 0.04
         shakeAnimation.repeatCount = numberOfTimes
         shakeAnimation.autoreverses = true
-        shakeAnimation.fromValue = NSValue(CGPoint: CGPointMake(self.center.x - offset, self.center.y))
-        shakeAnimation.toValue = NSValue(CGPoint: CGPointMake(self.center.x + offset, self.center.y))
-        self.layer.addAnimation(shakeAnimation, forKey: "position")
+        shakeAnimation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - offset, y: self.center.y))
+        shakeAnimation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + offset, y: self.center.y))
+        self.layer.add(shakeAnimation, forKey: "position")
         
     }
 }
