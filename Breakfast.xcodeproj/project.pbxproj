@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17ADEE0F1E2BF5C6007F2C7D /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */; };
 		8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */; };
 		8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C8C491BF171FE00B93D87 /* Matrix.swift */; };
 		9EFF26331AC5E95D0019DC5B /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
 		8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SequenceType.swift"; sourceTree = "<group>"; };
 		8A5C8C491BF171FE00B93D87 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */,
+				17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */,
 			);
 			name = "UIView Extensions";
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */,
 				8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */,
 				9EFFF0281AC21D9800B61495 /* String+Subscript.swift in Sources */,
+				17ADEE0F1E2BF5C6007F2C7D /* UIView+Snapshot.swift in Sources */,
 				9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */,
 				9EFFF0241AC21D2C00B61495 /* UIColor+Extensions.swift in Sources */,
 				9EFFF02F1AC21FF500B61495 /* NSObject+Extensions.swift in Sources */,
