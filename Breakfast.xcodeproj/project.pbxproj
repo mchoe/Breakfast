@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17063A0C1E3B03F0000CCB0D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17063A0B1E3B03F0000CCB0D /* String+Localized.swift */; };
 		17ADEE0F1E2BF5C6007F2C7D /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */; };
 		8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */; };
 		8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C8C491BF171FE00B93D87 /* Matrix.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17063A0B1E3B03F0000CCB0D /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
 		8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SequenceType.swift"; sourceTree = "<group>"; };
 		8A5C8C491BF171FE00B93D87 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
@@ -234,9 +236,10 @@
 		9EFFF0251AC21D8900B61495 /* String Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				17063A0B1E3B03F0000CCB0D /* String+Localized.swift */,
+				8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */,
 				9EFFF0261AC21D9800B61495 /* String+Subscript.swift */,
 				9EFFF0271AC21D9800B61495 /* String+ToHex.swift */,
-				8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */,
 			);
 			name = "String Extensions";
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */,
 				8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */,
 				9EFFF0281AC21D9800B61495 /* String+Subscript.swift in Sources */,
+				17063A0C1E3B03F0000CCB0D /* String+Localized.swift in Sources */,
 				17ADEE0F1E2BF5C6007F2C7D /* UIView+Snapshot.swift in Sources */,
 				9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */,
 				9EFFF0241AC21D2C00B61495 /* UIColor+Extensions.swift in Sources */,
