@@ -10,7 +10,7 @@ import Foundation
 
 extension Dictionary where Key: ExpressibleByStringLiteral, Value: ExpressibleByStringLiteral {
     
-    var asQueryItems: [URLQueryItem] {
+    public var asQueryItems: [URLQueryItem] {
         get {
             var returnArray = [URLQueryItem]()
             for (key, value) in self {
