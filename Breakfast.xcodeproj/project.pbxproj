@@ -13,24 +13,21 @@
 		17392C551E4013B100F26753 /* URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17392C541E4013B100F26753 /* URLQueryItem.swift */; };
 		17392C561E4013B100F26753 /* URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17392C541E4013B100F26753 /* URLQueryItem.swift */; };
 		17392C581E4013E100F26753 /* URLQueryItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17392C571E4013E100F26753 /* URLQueryItemTests.swift */; };
+		1751F1E0207172D9001E16D0 /* UIView+RemoveSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1751F1DF207172D9001E16D0 /* UIView+RemoveSubviews.swift */; };
 		178F50241E3D1F9D0004F497 /* UIView+InitFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F50231E3D1F9D0004F497 /* UIView+InitFromNib.swift */; };
 		17ADEE0F1E2BF5C6007F2C7D /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */; };
+		38A78B8721A0F38700A56251 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A78B8621A0F38700A56251 /* UITableView+Register.swift */; };
+		38A78B8921A0F3C700A56251 /* CanSupplyCellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A78B8821A0F3C700A56251 /* CanSupplyCellIdentifier.swift */; };
 		38CAA2601F3197B300D3D905 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAA25F1F3197B300D3D905 /* UITableView+Extensions.swift */; };
-		8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */; };
 		8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C8C491BF171FE00B93D87 /* Matrix.swift */; };
 		9EFF26331AC5E95D0019DC5B /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */; };
 		9EFF26351AC5E9810019DC5B /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF26341AC5E9810019DC5B /* NSObject+ClassName.swift */; };
 		9EFFF0041AC218D800B61495 /* Breakfast.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EFFF0031AC218D800B61495 /* Breakfast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EFFF00A1AC218D800B61495 /* Breakfast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFFEFFE1AC218D800B61495 /* Breakfast.framework */; };
 		9EFFF0111AC218D800B61495 /* BreakfastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0101AC218D800B61495 /* BreakfastTests.swift */; };
-		9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF01B1AC2190C00B61495 /* Stack.swift */; };
 		9EFFF0241AC21D2C00B61495 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0231AC21D2C00B61495 /* UIColor+Extensions.swift */; };
-		9EFFF0281AC21D9800B61495 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0261AC21D9800B61495 /* String+Subscript.swift */; };
 		9EFFF0291AC21D9800B61495 /* String+ToHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0271AC21D9800B61495 /* String+ToHex.swift */; };
 		9EFFF02C1AC21FE300B61495 /* Dictionary+KeyForValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF02B1AC21FE300B61495 /* Dictionary+KeyForValue.swift */; };
-		9EFFF02F1AC21FF500B61495 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */; };
-		9EFFF03F1AC222A500B61495 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF03E1AC222A500B61495 /* Pipeline.swift */; };
-		9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0411AC222B200B61495 /* Benchmarking.swift */; };
 		9EFFF04C1AC22EF900B61495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */; };
 		9EFFF04F1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF04D1AC22EF900B61495 /* BreakfastGallery.xcdatamodeld */; };
 		9EFFF0511AC22EF900B61495 /* GalleryRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFF0501AC22EF900B61495 /* GalleryRootViewController.swift */; };
@@ -87,10 +84,12 @@
 		17392C511E40099500F26753 /* UIViewController+LoadFromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadFromNib.swift"; sourceTree = "<group>"; };
 		17392C541E4013B100F26753 /* URLQueryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryItem.swift; sourceTree = "<group>"; };
 		17392C571E4013E100F26753 /* URLQueryItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryItemTests.swift; sourceTree = "<group>"; };
+		1751F1DF207172D9001E16D0 /* UIView+RemoveSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RemoveSubviews.swift"; sourceTree = "<group>"; };
 		178F50231E3D1F9D0004F497 /* UIView+InitFromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+InitFromNib.swift"; sourceTree = "<group>"; };
 		17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		38A78B8621A0F38700A56251 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		38A78B8821A0F3C700A56251 /* CanSupplyCellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanSupplyCellIdentifier.swift; sourceTree = "<group>"; };
 		38CAA25F1F3197B300D3D905 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
-		8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SequenceType.swift"; sourceTree = "<group>"; };
 		8A5C8C491BF171FE00B93D87 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
 		9EFF26341AC5E9810019DC5B /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
@@ -100,14 +99,9 @@
 		9EFFF0091AC218D800B61495 /* BreakfastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakfastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFFF00F1AC218D800B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFFF0101AC218D800B61495 /* BreakfastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastTests.swift; sourceTree = "<group>"; };
-		9EFFF01B1AC2190C00B61495 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		9EFFF0231AC21D2C00B61495 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		9EFFF0261AC21D9800B61495 /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 		9EFFF0271AC21D9800B61495 /* String+ToHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ToHex.swift"; sourceTree = "<group>"; };
 		9EFFF02B1AC21FE300B61495 /* Dictionary+KeyForValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyForValue.swift"; sourceTree = "<group>"; };
-		9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
-		9EFFF03E1AC222A500B61495 /* Pipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
-		9EFFF0411AC222B200B61495 /* Benchmarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benchmarking.swift; sourceTree = "<group>"; };
 		9EFFF0471AC22EF900B61495 /* BreakfastGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakfastGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFFF04A1AC22EF900B61495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFFF04B1AC22EF900B61495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				38CAA25F1F3197B300D3D905 /* UITableView+Extensions.swift */,
+				38A78B8621A0F38700A56251 /* UITableView+Register.swift */,
+				38A78B8821A0F3C700A56251 /* CanSupplyCellIdentifier.swift */,
 			);
 			name = "UITableVIew+Extensions";
 			sourceTree = "<group>";
@@ -194,6 +190,7 @@
 				9EFF26321AC5E95D0019DC5B /* UIView+Shake.swift */,
 				17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */,
 				178F50231E3D1F9D0004F497 /* UIView+InitFromNib.swift */,
+				1751F1DF207172D9001E16D0 /* UIView+RemoveSubviews.swift */,
 			);
 			name = "UIView Extensions";
 			sourceTree = "<group>";
@@ -223,12 +220,10 @@
 		9EFFF0001AC218D800B61495 /* Breakfast */ = {
 			isa = PBXGroup;
 			children = (
-				9EFFF0401AC222A900B61495 /* Benchmarking */,
 				17063A0D1E3B087F000CCB0D /* CGPoint Extensions */,
 				9EFFF01A1AC218E500B61495 /* Data Structures */,
 				9EFFF02A1AC21FD600B61495 /* Dictionary Extensions */,
 				9EFFF02D1AC21FEB00B61495 /* NSObject Extensions */,
-				9EFFF03D1AC2229B00B61495 /* Operators */,
 				9EFFF0251AC21D8900B61495 /* String Extensions */,
 				17392C531E40139600F26753 /* URLQueryItem */,
 				9EFFF0221AC21D1A00B61495 /* UIColor Extensions */,
@@ -270,7 +265,6 @@
 		9EFFF01A1AC218E500B61495 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
-				9EFFF01B1AC2190C00B61495 /* Stack.swift */,
 				8A5C8C491BF171FE00B93D87 /* Matrix.swift */,
 			);
 			name = "Data Structures";
@@ -288,8 +282,6 @@
 			isa = PBXGroup;
 			children = (
 				17063A0B1E3B03F0000CCB0D /* String+Localized.swift */,
-				8A5C8C471BF1664200B93D87 /* String+SequenceType.swift */,
-				9EFFF0261AC21D9800B61495 /* String+Subscript.swift */,
 				9EFFF0271AC21D9800B61495 /* String+ToHex.swift */,
 			);
 			name = "String Extensions";
@@ -307,25 +299,8 @@
 			isa = PBXGroup;
 			children = (
 				9EFF26341AC5E9810019DC5B /* NSObject+ClassName.swift */,
-				9EFFF02E1AC21FF500B61495 /* NSObject+Extensions.swift */,
 			);
 			name = "NSObject Extensions";
-			sourceTree = "<group>";
-		};
-		9EFFF03D1AC2229B00B61495 /* Operators */ = {
-			isa = PBXGroup;
-			children = (
-				9EFFF03E1AC222A500B61495 /* Pipeline.swift */,
-			);
-			name = Operators;
-			sourceTree = "<group>";
-		};
-		9EFFF0401AC222A900B61495 /* Benchmarking */ = {
-			isa = PBXGroup;
-			children = (
-				9EFFF0411AC222B200B61495 /* Benchmarking.swift */,
-			);
-			name = Benchmarking;
 			sourceTree = "<group>";
 		};
 		9EFFF0481AC22EF900B61495 /* BreakfastGallery */ = {
@@ -499,6 +474,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -558,22 +534,19 @@
 				9EFF26331AC5E95D0019DC5B /* UIView+Shake.swift in Sources */,
 				17392C551E4013B100F26753 /* URLQueryItem.swift in Sources */,
 				17063A0F1E3B0893000CCB0D /* CGPoint+Extensions.swift in Sources */,
-				8A5C8C481BF1664200B93D87 /* String+SequenceType.swift in Sources */,
+				1751F1E0207172D9001E16D0 /* UIView+RemoveSubviews.swift in Sources */,
 				8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */,
-				9EFFF0281AC21D9800B61495 /* String+Subscript.swift in Sources */,
 				17063A0C1E3B03F0000CCB0D /* String+Localized.swift in Sources */,
+				38A78B8921A0F3C700A56251 /* CanSupplyCellIdentifier.swift in Sources */,
+				38A78B8721A0F38700A56251 /* UITableView+Register.swift in Sources */,
 				17392C521E40099500F26753 /* UIViewController+LoadFromNib.swift in Sources */,
 				17ADEE0F1E2BF5C6007F2C7D /* UIView+Snapshot.swift in Sources */,
-				9EFFF01C1AC2190C00B61495 /* Stack.swift in Sources */,
 				178F50241E3D1F9D0004F497 /* UIView+InitFromNib.swift in Sources */,
 				9EFFF0241AC21D2C00B61495 /* UIColor+Extensions.swift in Sources */,
-				9EFFF02F1AC21FF500B61495 /* NSObject+Extensions.swift in Sources */,
-				9EFFF03F1AC222A500B61495 /* Pipeline.swift in Sources */,
 				9EFFF02C1AC21FE300B61495 /* Dictionary+KeyForValue.swift in Sources */,
 				38CAA2601F3197B300D3D905 /* UITableView+Extensions.swift in Sources */,
 				9EFFF0291AC21D9800B61495 /* String+ToHex.swift in Sources */,
 				9EFF26351AC5E9810019DC5B /* NSObject+ClassName.swift in Sources */,
-				9EFFF0421AC222B200B61495 /* Benchmarking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,7 +728,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -775,7 +748,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -794,7 +767,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -809,7 +782,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -827,7 +800,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -841,7 +814,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -861,7 +834,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakfastGallery.app/BreakfastGallery";
 			};
 			name = Debug;
@@ -878,7 +851,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.straussmade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakfastGallery.app/BreakfastGallery";
 			};
 			name = Release;

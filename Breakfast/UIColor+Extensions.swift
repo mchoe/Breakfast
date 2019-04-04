@@ -31,36 +31,54 @@ import UIKit
 
 public extension UIColor {
     
+    var hexString: String? {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        
+        let multiplier = CGFloat(255.999999)
+        
+        guard self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) else {
+            return nil
+        }
+        
+        if alpha == 1.0 {
+            return String(
+                format: "#%02lX%02lX%02lX",
+                Int(red * multiplier),
+                Int(green * multiplier),
+                Int(blue * multiplier)
+            )
+        } else {
+            return String(
+                format: "#%02lX%02lX%02lX%02lX",
+                Int(red * multiplier),
+                Int(green * multiplier),
+                Int(blue * multiplier),
+                Int(alpha * multiplier)
+            )
+        }
+    }
+    
     convenience init(hexString: String) {
         
         var workingString = hexString
         if workingString.hasPrefix("#") {
-            workingString = String(workingString.characters.dropFirst())
+            workingString.remove(at: workingString.startIndex)
         }
         
-        var hexRed = "00"
-        var hexGreen = "00"
-        var hexBlue = "00"
+        var rgbValue: UInt32 = 0
+        Scanner(string: workingString).scanHexInt32(&rgbValue)
         
-        if workingString.characters.count == 6 {
-            hexRed = workingString[0...1]
-            hexGreen = workingString[2...3]
-            hexBlue = workingString[4...5]
-        } else if workingString.characters.count == 3 {
-            let redValue = workingString[0]
-            let greenValue = workingString[1]
-            let blueValue = workingString[2]
-            hexRed = "\(redValue)\(redValue)"
-            hexGreen = "\(greenValue)\(greenValue)"
-            hexBlue = "\(blueValue)\(blueValue)"
-        }
-        
-        let red = CGFloat(hexRed.hexToInteger())
-        let green = CGFloat(hexGreen.hexToInteger())
-        let blue = CGFloat(hexBlue.hexToInteger())
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)
+        let green = CGFloat((rgbValue & 0x00FF00) >> 8)
+        let blue = CGFloat(rgbValue & 0x0000FF)
         
         self.init(red: CGFloat(red / 255.0), green: CGFloat(green / 255.0), blue: CGFloat(blue / 255.0), alpha: 1.0)
     }
+    
+    
 }
 
 
