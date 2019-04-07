@@ -1,5 +1,5 @@
 //
-//  CGPoint+Extensions.swift
+//  Dictionary+Parameters.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -29,18 +29,17 @@
 
 import Foundation
 
-public func +(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x + right.x, y: left.y + right.y)
-}
-
-public func -(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x - right.x, y: left.y - right.y)
-}
-
-extension CGPoint {
+public extension Dictionary where Key: CustomStringConvertible, Value: CustomStringConvertible {
     
-    public func delta(from point: CGPoint) -> CGPoint {
-        return CGPoint(x: point.x - self.x, y: point.y - self.y)
+    var asParameterString: String {
+        var returnString = ""
+        for (offset: index, element: (key: key, value: value)) in self.enumerated() {
+            returnString += "\(key)=\(value)"
+            if index < self.count - 1 {
+                returnString += "&"
+            }
+        }
+        return returnString
     }
     
 }

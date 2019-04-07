@@ -1,5 +1,5 @@
 //
-//  CGPoint+Extensions.swift
+//  URL+Extensions.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -29,18 +29,22 @@
 
 import Foundation
 
-public func +(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x + right.x, y: left.y + right.y)
-}
 
-public func -(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x - right.x, y: left.y - right.y)
-}
-
-extension CGPoint {
+public extension URL {
     
-    public func delta(from point: CGPoint) -> CGPoint {
-        return CGPoint(x: point.x - self.x, y: point.y - self.y)
+    init?(baseURLString: String, queryItems: [URLQueryItem]?) {
+        
+        guard var components = URLComponents(string: baseURLString) else {
+            return nil
+        }
+        
+        components.queryItems = queryItems
+        
+        guard let urlString = components.string else {
+            return nil
+        }
+        
+        self.init(string: urlString)
     }
     
 }

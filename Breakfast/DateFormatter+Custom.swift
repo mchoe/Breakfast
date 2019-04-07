@@ -1,5 +1,5 @@
 //
-//  CGPoint+Extensions.swift
+//  NSDateFormatter+Custom.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -29,18 +29,21 @@
 
 import Foundation
 
-public func +(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x + right.x, y: left.y + right.y)
+protocol ProvidesDateFormatter {
+    static var dateFormatter: DateFormatter { get }
 }
 
-public func -(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x - right.x, y: left.y - right.y)
-}
-
-extension CGPoint {
+public extension DateFormatter {
     
-    public func delta(from point: CGPoint) -> CGPoint {
-        return CGPoint(x: point.x - self.x, y: point.y - self.y)
+    static let iso8601: DateFormatter = {
+        return DateFormatter.customFormatString("yyyy-MM-dd'T'HH:mm:ss'Z'")
+    }()
+    
+    static func customFormatString(_ formatString: String) -> DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = formatString
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
     }
     
 }

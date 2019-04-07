@@ -4,7 +4,7 @@
 //  Start you next Swift project off right with Breakfast
 //
 //
-//  Copyright (c) 2015 Michael Choe
+//  Copyright (c) 2019 Michael Choe
 //  http://www.straussmade.com/
 //  http://www.twitter.com/_mchoe
 //  http://www.github.com/mchoe
@@ -31,12 +31,14 @@ import Foundation
 
 public func allKeysForValue<K, V: Equatable>(_ dict: [K: V], valueToMatch: V) -> [K]? {
     
+    let possibleValues = dict
+        .filter({ (key, value) -> Bool in
+            return value == valueToMatch
+        })
+        .map({ (key, value) -> K in
+            return key
+        })
     
-    let possibleValues = dict.filter ({ (key, value) -> Bool in
-        return value == valueToMatch
-    }).map { (key, value) -> K in
-        return key
-    }
     if possibleValues.count > 0 {
         return possibleValues
     }

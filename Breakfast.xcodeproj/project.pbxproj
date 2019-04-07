@@ -16,6 +16,13 @@
 		1751F1E0207172D9001E16D0 /* UIView+RemoveSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1751F1DF207172D9001E16D0 /* UIView+RemoveSubviews.swift */; };
 		178F50241E3D1F9D0004F497 /* UIView+InitFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F50231E3D1F9D0004F497 /* UIView+InitFromNib.swift */; };
 		17ADEE0F1E2BF5C6007F2C7D /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */; };
+		381596AE2255C7A800256CE2 /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381596AD2255C7A800256CE2 /* Dictionary+Add.swift */; };
+		3864C21C2257F511007CE5E3 /* DateFormatter+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C21B2257F511007CE5E3 /* DateFormatter+Custom.swift */; };
+		3864C2272257F827007CE5E3 /* Dictionary+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C2262257F826007CE5E3 /* Dictionary+Parameters.swift */; };
+		3864C22C2258AAD5007CE5E3 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C22B2258AAD5007CE5E3 /* URL+Extensions.swift */; };
+		3864C22E2258AB05007CE5E3 /* MemoryAddressConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C22D2258AB05007CE5E3 /* MemoryAddressConvertible.swift */; };
+		3864C260225A2DCE007CE5E3 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C25F225A2DCE007CE5E3 /* Print.swift */; };
+		3864C2E0225A39CE007CE5E3 /* CanDetermineEmptiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864C2DF225A39CE007CE5E3 /* CanDetermineEmptiness.swift */; };
 		38A78B8721A0F38700A56251 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A78B8621A0F38700A56251 /* UITableView+Register.swift */; };
 		38A78B8921A0F3C700A56251 /* CanSupplyCellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A78B8821A0F3C700A56251 /* CanSupplyCellIdentifier.swift */; };
 		38CAA2601F3197B300D3D905 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAA25F1F3197B300D3D905 /* UITableView+Extensions.swift */; };
@@ -87,6 +94,13 @@
 		1751F1DF207172D9001E16D0 /* UIView+RemoveSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RemoveSubviews.swift"; sourceTree = "<group>"; };
 		178F50231E3D1F9D0004F497 /* UIView+InitFromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+InitFromNib.swift"; sourceTree = "<group>"; };
 		17ADEE0E1E2BF5C6007F2C7D /* UIView+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		381596AD2255C7A800256CE2 /* Dictionary+Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Add.swift"; sourceTree = "<group>"; };
+		3864C21B2257F511007CE5E3 /* DateFormatter+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Custom.swift"; sourceTree = "<group>"; };
+		3864C2262257F826007CE5E3 /* Dictionary+Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Parameters.swift"; sourceTree = "<group>"; };
+		3864C22B2258AAD5007CE5E3 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		3864C22D2258AB05007CE5E3 /* MemoryAddressConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryAddressConvertible.swift; sourceTree = "<group>"; };
+		3864C25F225A2DCE007CE5E3 /* Print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		3864C2DF225A39CE007CE5E3 /* CanDetermineEmptiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanDetermineEmptiness.swift; sourceTree = "<group>"; };
 		38A78B8621A0F38700A56251 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
 		38A78B8821A0F3C700A56251 /* CanSupplyCellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanSupplyCellIdentifier.swift; sourceTree = "<group>"; };
 		38CAA25F1F3197B300D3D905 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
@@ -174,6 +188,39 @@
 			name = URLQueryItem;
 			sourceTree = "<group>";
 		};
+		3864C21A2257F4FA007CE5E3 /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				3864C21B2257F511007CE5E3 /* DateFormatter+Custom.swift */,
+			);
+			name = DateFormatter;
+			sourceTree = "<group>";
+		};
+		3864C22A2258AAA4007CE5E3 /* URL Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3864C22B2258AAD5007CE5E3 /* URL+Extensions.swift */,
+			);
+			name = "URL Extensions";
+			sourceTree = "<group>";
+		};
+		3864C22F2258AB0A007CE5E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3864C2DF225A39CE007CE5E3 /* CanDetermineEmptiness.swift */,
+				3864C22D2258AB05007CE5E3 /* MemoryAddressConvertible.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		3864C25E225A2DBB007CE5E3 /* Print */ = {
+			isa = PBXGroup;
+			children = (
+				3864C25F225A2DCE007CE5E3 /* Print.swift */,
+			);
+			name = Print;
+			sourceTree = "<group>";
+		};
 		38CAA25E1F31979800D3D905 /* UITableVIew+Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,14 +269,18 @@
 			children = (
 				17063A0D1E3B087F000CCB0D /* CGPoint Extensions */,
 				9EFFF01A1AC218E500B61495 /* Data Structures */,
+				3864C21A2257F4FA007CE5E3 /* DateFormatter */,
 				9EFFF02A1AC21FD600B61495 /* Dictionary Extensions */,
 				9EFFF02D1AC21FEB00B61495 /* NSObject Extensions */,
+				3864C25E225A2DBB007CE5E3 /* Print */,
+				3864C22F2258AB0A007CE5E3 /* Protocols */,
 				9EFFF0251AC21D8900B61495 /* String Extensions */,
 				17392C531E40139600F26753 /* URLQueryItem */,
 				9EFFF0221AC21D1A00B61495 /* UIColor Extensions */,
 				9EFF26311AC5E9450019DC5B /* UIView Extensions */,
 				17392C501E40096600F26753 /* UIViewController */,
 				38CAA25E1F31979800D3D905 /* UITableVIew+Extensions */,
+				3864C22A2258AAA4007CE5E3 /* URL Extensions */,
 				9EFFF0031AC218D800B61495 /* Breakfast.h */,
 				9EFFF0011AC218D800B61495 /* Supporting Files */,
 			);
@@ -291,6 +342,8 @@
 			isa = PBXGroup;
 			children = (
 				9EFFF02B1AC21FE300B61495 /* Dictionary+KeyForValue.swift */,
+				381596AD2255C7A800256CE2 /* Dictionary+Add.swift */,
+				3864C2262257F826007CE5E3 /* Dictionary+Parameters.swift */,
 			);
 			name = "Dictionary Extensions";
 			sourceTree = "<group>";
@@ -537,14 +590,21 @@
 				1751F1E0207172D9001E16D0 /* UIView+RemoveSubviews.swift in Sources */,
 				8A5C8C4A1BF171FE00B93D87 /* Matrix.swift in Sources */,
 				17063A0C1E3B03F0000CCB0D /* String+Localized.swift in Sources */,
+				3864C22E2258AB05007CE5E3 /* MemoryAddressConvertible.swift in Sources */,
+				3864C260225A2DCE007CE5E3 /* Print.swift in Sources */,
+				381596AE2255C7A800256CE2 /* Dictionary+Add.swift in Sources */,
 				38A78B8921A0F3C700A56251 /* CanSupplyCellIdentifier.swift in Sources */,
 				38A78B8721A0F38700A56251 /* UITableView+Register.swift in Sources */,
+				3864C21C2257F511007CE5E3 /* DateFormatter+Custom.swift in Sources */,
 				17392C521E40099500F26753 /* UIViewController+LoadFromNib.swift in Sources */,
+				3864C2272257F827007CE5E3 /* Dictionary+Parameters.swift in Sources */,
 				17ADEE0F1E2BF5C6007F2C7D /* UIView+Snapshot.swift in Sources */,
 				178F50241E3D1F9D0004F497 /* UIView+InitFromNib.swift in Sources */,
 				9EFFF0241AC21D2C00B61495 /* UIColor+Extensions.swift in Sources */,
+				3864C2E0225A39CE007CE5E3 /* CanDetermineEmptiness.swift in Sources */,
 				9EFFF02C1AC21FE300B61495 /* Dictionary+KeyForValue.swift in Sources */,
 				38CAA2601F3197B300D3D905 /* UITableView+Extensions.swift in Sources */,
+				3864C22C2258AAD5007CE5E3 /* URL+Extensions.swift in Sources */,
 				9EFFF0291AC21D9800B61495 /* String+ToHex.swift in Sources */,
 				9EFF26351AC5E9810019DC5B /* NSObject+ClassName.swift in Sources */,
 			);

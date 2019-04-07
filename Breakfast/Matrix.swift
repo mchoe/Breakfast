@@ -84,7 +84,7 @@ private extension Matrix {
 
 public extension Matrix {
     
-    public subscript (i: Int, j: Int) -> T {
+    subscript (i: Int, j: Int) -> T {
         
         get {
             return elements[i * self.columnCount + j]
@@ -95,11 +95,11 @@ public extension Matrix {
         }
     }
     
-    public mutating func add(_ element: T) {
+    mutating func add(_ element: T) {
         assert(false, "Needs Implementing")
     }
     
-    public mutating func addColumn(_ column: T) {
+    mutating func addColumn(_ column: T) {
         assert(false, "Needs Implementing")
     }
     

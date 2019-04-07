@@ -1,5 +1,5 @@
 //
-//  CGPoint+Extensions.swift
+//  MemoryAddressConvertible.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -29,18 +29,12 @@
 
 import Foundation
 
-public func +(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x + right.x, y: left.y + right.y)
+public protocol MemoryAddressConvertible {
+    var memoryAddressString: String { get }
 }
 
-public func -(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x - right.x, y: left.y - right.y)
-}
-
-extension CGPoint {
-    
-    public func delta(from point: CGPoint) -> CGPoint {
-        return CGPoint(x: point.x - self.x, y: point.y - self.y)
+public extension MemoryAddressConvertible {
+    var memoryAddressString: String {
+        return String(format: "%p", unsafeBitCast(self, to: Int.self))
     }
-    
 }

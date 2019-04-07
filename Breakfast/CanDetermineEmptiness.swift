@@ -1,5 +1,5 @@
 //
-//  CGPoint+Extensions.swift
+//  CanDetermineEmptiness.swift
 //  Breakfast
 //  Start you next Swift project off right with Breakfast
 //
@@ -29,18 +29,6 @@
 
 import Foundation
 
-public func +(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x + right.x, y: left.y + right.y)
-}
-
-public func -(left: CGPoint, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.x - right.x, y: left.y - right.y)
-}
-
-extension CGPoint {
-    
-    public func delta(from point: CGPoint) -> CGPoint {
-        return CGPoint(x: point.x - self.x, y: point.y - self.y)
-    }
-    
+public protocol CanDetermineEmptiness {
+    var isEmpty: Bool { get }
 }
